@@ -1,7 +1,7 @@
 import request from 'request';
 import { realpath } from 'fs';
 
-const BL_URL = 'http://localhost:5757/';
+const BL_URL = process.env.REACT_APP_TASKS_SERVER_URL || 'http://localhost:5757/';
 
 export default {
 
